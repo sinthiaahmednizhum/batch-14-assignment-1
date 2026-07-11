@@ -30,7 +30,7 @@ nav {
   align-items: center;
   height: 80px;
   width: 1500px;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: auto;
   padding: 30px 0;
 }
@@ -52,7 +52,7 @@ ul li a {
   width: 140px;
   height: auto;
 }
-
+/* header */
 header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -82,9 +82,8 @@ header {
   margin-bottom: 250px;
   line-height: 1.1;
 }
-
+/* speaker */
 .speakers {
-  font-family: "Inter", sans-serif;
   width: 85%;
   max-width: 1200px;
   margin: 80px auto;
@@ -92,8 +91,9 @@ header {
 
 .speakers h2 {
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
   color: #111;
   margin-bottom: 48px;
 }
@@ -108,14 +108,9 @@ header {
   background: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 12px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  /* Transition */
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
 .card img {
@@ -150,8 +145,138 @@ header {
   line-height: 1.4;
 }
 
-/* Hover Effect */
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+/* Pricing Section */
+
+.pricing-section {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  margin: 60px auto;
+  box-sizing: border-box;
 }
+.pricing-section h2 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+.pricing-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  height: auto;
+}
+.price-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px 20px 15px 35px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.pro-card {
+  background: #0b1329;
+  color: #ffffff;
+  border: none;
+}
+
+.card-type {
+  font-size: 11px;
+  font-weight: 800;
+  color: #888888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.pro-card .card-type {
+  color: #93c5fd;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.pro-card .price {
+  color: #ffffff;
+}
+
+.per-person {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 16px;
+}
+
+.pro-card .per-person {
+  color: #94a3b8;
+  border-bottom: 1px solid #1e293b;
+}
+.features {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding-left: 20px !important;
+  margin: 0 0 20px 0 !important;
+  list-style-type: disc !important;
+}
+
+.features li {
+  display: list-item !important;
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 1.5px;
+  line-height: 1;
+  text-align: left;
+}
+.features li::marker {
+  color: #3b82f6;
+}
+
+.pro-card .features li {
+  color: #cbd5e1;
+}
+
+.btn-outline,
+.btn-blue,
+.btn-black {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.btn-outline {
+  background: #ffffff;
+  border: 1px solid #2563eb;
+  color: #3b82f6;
+}
+.btn-blue {
+  background: #2563eb;
+  border: none;
+  color: white;
+}
+.btn-black {
+  background: #ffffff;
+  border: 1px solid #111111;
+  color: #111111;
+}
+
+/* PLACEHOLDER SECTION */
