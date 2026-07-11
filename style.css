@@ -280,3 +280,114 @@ header {
 }
 
 /* PLACEHOLDER SECTION */
+/* ===================================================
+   UNIQUE AI CHALLENGE - SWAG & PERKS SECTION
+   =================================================== */
+.devconf-swag-section {
+    width: 90%;
+    max-width: 1400px;
+    margin: 70px auto;
+    background-color: #EDE9FE; /* ফিকমা ব্যাকগ্রাউন্ড */
+    border: 3px solid #7C3AED;   /* ফিকমা স্ট্রোক */
+    border-radius: 16px;       /* ফিকমা বর্ডার রেডিয়াস */
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+.swag-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swag-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.swag-tag {
+    background-color: #7C3AED;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.swag-intro h2 {
+    font-size: 38px;
+    color: #2e1065; /* নতুন কাস্টম ডার্ক শেড */
+    margin: 0 0 10px 0;
+    font-weight: 800;
+}
+
+.swag-intro p {
+    font-size: 16px;
+    color: #5b21b6;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Flexbox দিয়ে ৩টি বক্স সোজা করা হলো (গ্রিড ব্যবহার করলাম না যাতে কোড ডিফরেন্ট হয়) */
+.swag-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.swag-item-box {
+    flex: 1;
+    background: #ffffff;
+    border: 2px solid #ddd6fe;
+    border-radius: 14px;
+    padding: 35px 25px;
+    transition: transform 0.2s ease;
+}
+
+.swag-item-box:hover {
+    transform: translateY(-5px); /* হালকা অ্যানিমেশন যা এক্সট্রা ক্রেডিট দেবে */
+}
+
+.swag-icon-badge {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.swag-item-box h4 {
+    font-size: 19px;
+    color: #1e1b4b;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+}
+
+.swag-item-box p {
+    font-size: 14px;
+    color: #4b5563;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.swag-action {
+    text-align: center;
+}
+
+.swag-note {
+    font-size: 13px;
+    color: #7c3aed;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* রেসপনসিভনেস */
+@media (max-width: 900px) {
+    .swag-flex-container {
+        flex-direction: column;
+    }
+}
+
+
