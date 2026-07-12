@@ -195,7 +195,7 @@ header {
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
-  padding: 24px 20px 15px 35px;
+  padding: 26px 30px 20px 30px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -210,8 +210,7 @@ header {
   font-size: 11px;
   font-weight: 800;
   color: #888888;
-  text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .pro-card .card-type {
@@ -233,20 +232,20 @@ header {
   font-size: 13px;
   color: #64748b;
   margin-bottom: 20px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #e5e7eb;
   padding-bottom: 16px;
 }
 
 .pro-card .per-person {
-  color: #94a3b8;
-  border-bottom: 1px solid #1e293b;
+  color: #888888;
+  border-bottom: 1px solid #414040;
 }
 .features {
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
   padding-left: 20px !important;
-  margin: 0 0 20px 0 !important;
+  margin: 0 0 5px 0 !important;
   list-style-type: disc !important;
 }
 
@@ -255,7 +254,7 @@ header {
   font-size: 15px;
   color: #333333;
   margin-bottom: 1.5px;
-  line-height: 1;
+  line-height: 8px;
   text-align: left;
 }
 .features li::marker {
@@ -275,7 +274,10 @@ header {
   font-weight: 600;
   cursor: pointer;
   font-size: 14px;
-  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
   text-align: center;
   box-sizing: border-box;
 }
