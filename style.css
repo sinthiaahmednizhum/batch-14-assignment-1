@@ -7,32 +7,37 @@
 /* Common style */
 .common-btn {
   background-color: #1d4ed8;
-  padding: 12px 28px;
+  padding: 12px 40px;
   border-radius: 10px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 .hero-btn {
-  width: 220px;
-  height: 60px;
-  font-size: 18px;
-  padding: 12px 24px;
-  height: 74px;
-  width: 282px;
+  height: 74px !important;
+  width: 282px !important;
+  font-size: 22px;
+  padding: 0 !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  position: relative;
+  top: 50px;
 }
 nav {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  width: 1500px;
+  height: 98px;
   max-width: 1200px;
   margin: auto;
-  padding: 30px 0;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 ul {
@@ -69,18 +74,29 @@ header {
 .header-content {
   color: #ffffff;
   text-align: center;
-  max-width: 600px;
+  max-width: 959px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-content h1 {
-  font-size: 55px;
-  margin-bottom: 25px;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -3.2px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.italic-text {
+  font-style: italic;
 }
 
 .header-content p {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 650px;
   margin-bottom: 250px;
-  line-height: 1.1;
 }
 /* speaker */
 .speakers {
