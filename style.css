@@ -350,7 +350,7 @@ header {
   line-height: 1.6;
 }
 
-/* Flexbox দিয়ে ৩টি বক্স সোজা করা হলো (গ্রিড ব্যবহার করলাম না যাতে কোড ডিফরেন্ট হয়) */
+/* Flexbox */
 .swag-flex-container {
   display: flex;
   justify-content: space-between;
@@ -368,7 +368,7 @@ header {
 }
 
 .swag-item-box:hover {
-  transform: translateY(-5px); /* হালকা অ্যানিমেশন যা এক্সট্রা ক্রেডিট দেবে */
+  transform: translateY(-5px); /* হালকা অ্যানিমেশন যা এক্সট্রা ক্রেডিট */
 }
 
 .swag-icon-badge {
@@ -406,4 +406,85 @@ header {
   .swag-flex-container {
     flex-direction: column;
   }
+}
+
+/* Footer Section */
+.site-footer {
+  background-color: #0b1329;
+  padding: 60px 60px 32px 60px;
+  width: 100%;
+  min-height: 145px;
+  box-sizing: border-box;
+}
+
+.footer-wrap {
+  width: 100%;
+}
+.footer-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+.social-networks {
+  display: flex;
+  align-items: center;
+}
+.social-networks a {
+  color: #94a3b8;
+  margin-left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  display: inline-block;
+}
+.social-networks a:hover {
+  color: #ffffff;
+}
+.footer-separator {
+  border: 0;
+  height: 1px;
+  background-color: #334155; 
+  opacity: 0.6;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 100%;
+}
+.footer-row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal-text {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0;
+}
+
+.legal-pages {
+  display: flex;
+  gap: 25px;
+}
+
+.page-link {
+  color: #64748b;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.page-link:hover {
+  color: #ffffff;
 }
